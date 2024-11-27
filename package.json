@@ -21,8 +21,7 @@
     "typescript": "~5.1.0"
   },
   "scripts": {
-    "prestart": "npm run build",
-    "start": "node build/src/main.js",
+    "start": "yarn build && node build/src/main.js",
     "clean": "rimraf coverage build tmp",
     "build": "tsc -p tsconfig.json && tsc-alias",
     "build:watch": "tsc -w -p tsconfig.json && tsc-alias",
