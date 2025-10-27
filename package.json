@@ -1,24 +1,25 @@
 {
   "name": "node-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
   "type": "module",
   "engines": {
     "node": ">= 18.12"
   },
   "devDependencies": {
-    "@types/jest": "~29.5",
     "@types/node": "~18",
     "@typescript-eslint/eslint-plugin": "~6.2",
     "@typescript-eslint/parser": "~6.2",
-    "eslint": "~8.46",
+    "eslint": "~9.38.0",
     "eslint-config-prettier": "~9.0",
-    "eslint-plugin-prettier": "^5.1.1",
-    "prettier": "~3.0",
-    "rimraf": "~5.0",
-    "ts-api-utils": "~1.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^15.15.0",
+    "prettier": "~3.0.3",
+    "rimraf": "~5.0.10",
+    "ts-api-utils": "~1.0.3",
     "tsc-alias": "1.8.8",
-    "typescript": "~5.1.0"
+    "typescript": "~5.1.6"
   },
   "scripts": {
     "start": "yarn build && node build/src/main.js",
@@ -31,7 +32,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "tslib": "~2.6.2"
+    "cron": "^4.3.3",
+    "tslib": "~2.6.3",
+    "useless-helpers": "^0.0.26"
   },
   "volta": {
     "node": "18.12.1"
